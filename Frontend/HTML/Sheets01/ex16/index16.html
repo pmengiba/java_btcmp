@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX. 16 Formularios</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h1>Formulario de Contacto</h1>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="30">
+        <br><br>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="30">
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <label for="asunto">Asunto:</label>
+        <select id="asunto" name="asunto" size="3">
+            <option value="presupuesto">Pedir presupuesto</option>
+            <option value="cita">Solicitar cita previa</option>
+            <option value="otros">Otros</option>
+        </select>
+        <br><br>
+        
+        <label>¿Cómo nos ha conocido?</label><br>
+        <input type="checkbox" id="amigo" name="info[]" value="amigo">
+        <label for="amigo">Un amigo</label><br>
+        
+        <input type="checkbox" id="google" name="info[]" value="google">
+        <label for="google">Googleando</label><br>
+        
+        <input type="checkbox" id="buzoneo" name="info[]" value="buzoneo">
+        <label for="buzoneo">Buzoneo</label><br>
+        
+        <input type="checkbox" id="otros" name="info[]" value="otros">
+        <label for="otros">Otros</label>
+        <br><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" maxlength="300" rows="5" cols="40"></textarea>
+        <br><br>
+        
+        <input type="checkbox" id="rgpd" name="rgpd" required>
+        <label for="rgpd">He leído y acepto el <a href="#">aviso legal</a> y la <a href="#">política de privacidad</a></label>
+        <br><br>
+        
+        <input type="submit" value="Ahí va eso">
+    </form>
+</body>
+</html>
