@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX05 - Replicar un wireframe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            padding: 20px;
+        }
+        header .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .hero, footer {
+            background-color: #d6d4d441;
+            padding: 20px;
+            text-align: center;
+        }
+        header nav a, footer nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        header p{
+            font-weight: bold;
+        }
+        .sign{
+            border: 1px solid black;
+            padding: 3px 15px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .hero {
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            margin: 0 0 20px;
+        }
+        .hero p {
+            margin: 0 0 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .aux-container{
+            width: 50%;
+            margin: 0 auto;
+            padding: 35px 0;
+        }
+        .value-proposition {
+            padding: 50px 20px;
+        }
+        .value-proposition h2 {
+            margin: 0 0 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .card {
+            width: 30%;
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: left;
+        }
+        .img {
+            height: 190px;
+            margin: auto;
+            background-color: #000;
+        }
+        .card h3 {
+            margin: 20px 0 10px;
+        }
+        .card p {
+            margin: 0;
+        }
+        footer {
+            padding: 20px;
+            background-color: #f8f8f8;
+            text-align: left;
+        }
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        footer .column {
+            width: 15%;
+        }
+        footer .column:nth-child(1){
+            width: 40%;
+            text-align: left;
+        }
+        footer .column h3 {
+            margin-top: 0;
+        }
+        footer .column a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #000;
+            font-size: .8rem;
+        }
+        footer .column p {
+            margin: 5px 0;
+            font-size: .8rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p>TRADE</p>
+            <nav>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#" class="sign">Sign up</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="aux-container">
+            <h1>Ready to get started?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Start free trial</button>
+        </div>
+        </div>
+    </section>
+    <section class="value-proposition">
+        <div class="container">
+            <div class="aux-container">
+            <h2>Your Best Value Proposition</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="img"></div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container ">
+            <div class="column">
+                <h3>TRADE</h3>                
+                <p>&copy; 2010 - 2020</p>
+                <a href="#">Privacy - Terms</a>
+            </div>
+            <div class="column">
+                <p>Product</p>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+                <a href="#">Product</a>
+            </div>
+            <div class="column">
+                <p>Features</p>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+                <a href="#">Feature</a>
+            </div>
+            <div class="column">
+                <p>Resources</p>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+                <a href="#">Resource</a>
+            </div>
+            <div class="column">
+                <p>Company</p>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+                <a href="#">Company</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
