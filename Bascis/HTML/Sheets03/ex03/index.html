@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX03 - Incrustación de contenido multimedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        header {
+            color: rgb(26, 25, 25);
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+        }
+        main {
+            background-color: white;
+            padding: 2em;
+            margin: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        video, audio, iframe, img {
+            margin: 1em 0;
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EX03</h1>
+    </header>
+    <main>
+        <h1>Video control</h1>
+        <video controls>
+            <source src="./assets/video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <h1>Audio mp3</h1>
+        <audio controls autoplay>
+            <source src="./assets/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <h1>Iframe Youtube</h1>
+        <iframe width="560" height="415" src="https://www.youtube.com/embed/5L_JtGfuNsI?si=8ULAOebPaH-34qpi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <h1>SVG Img</h1>
+        <img src="./assets/javascript-svgrepo-com.svg" alt="Descripción de la imagen SVG">
+    </main>
+</body>
+</html>
