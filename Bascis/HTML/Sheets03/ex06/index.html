@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX06 - Uso de formularios avanzados con HTML5</title>
+</head>
+<body>
+    <h1>Reservar Cita Previa</h1>
+    <form>
+        <fieldset>
+            <legend>Tipo de Consulta</legend>
+            <label>
+                <input type="checkbox" name="consulta" value="general"> General
+            </label>
+            <label>
+                <input type="checkbox" name="consulta" value="especialidad"> Especialidad
+            </label>
+            <label>
+                <input type="checkbox" name="consulta" value="urgencias"> Urgencias
+            </label>
+        </fieldset>
+        <br>
+        <label for="fecha-hora">Fecha y Hora:</label>
+        <br>
+        <input type="datetime-local" id="fecha-hora" name="fecha-hora" required>
+        <br>
+        <br>
+        <label for="sintomas">Descripción de los Síntomas:</label>
+        <br>
+        <textarea id="sintomas" name="sintomas" rows="4" cols="50" required></textarea>
+        <br>
+        <br>
+        <label for="documentos">Subir Documentos Médicos:</label>
+        <br>
+        <input type="file" id="documentos" name="documentos">
+        <br>
+        <br>
+        <label for="medico">Seleccionar Médico:</label>
+        <br>
+        <select id="medico" name="medico" required>
+            <option value="medico1">Dr. Mengibar</option>
+            <option value="medico2">Dra. García</option>
+            <option value="medico3">Dr. Pablo</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

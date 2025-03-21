@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04 - Creación de una tabla accesible</title>
+</head>
+<body>
+    <table border="border-collapse">
+        <caption>Empleados</caption>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Departamento</th>
+                <th scope="col">Fecha de contratación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pablo</td>
+                <td>Mengibar</td>
+                <td>DEV</td>
+                <td>IT</td>
+                <td>21/03/2025</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Total de empleados: 1</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
