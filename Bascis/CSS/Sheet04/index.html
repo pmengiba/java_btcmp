@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios de CSS3 - Mundo Pokemon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="triangle top-left"></div>
+    <div class="triangle top-right"></div>
+    <div class="container">
+
+        <div class="circle bottom-left"></div>
+        <div class="circle bottom-right"></div>
+      <div class="row">
+        <input
+          class="search-bar"
+          placeholder="Filtrar pokemons por nombre"
+          type="text"
+        />
+      </div>
+      <div class="row">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Pkm01">
+              <span>ID / 1</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Bulbasaur</h1>
+              <div class="pkm-type">
+                <p>Grass</p>
+                <p>Poison</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Pkm02">
+              <span>ID / 2</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Ivysaur</h1>
+              <div class="pkm-type">
+                <p>Grass</p>
+                <p>Poison</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Bulbasaur</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Pkm03">
+              <span>ID / 3</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Venusaur</h1>
+              <div class="pkm-type">
+                <p>Grass</p>
+                <p>Poison</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Ivysaur</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Pkm04">
+              <span>ID / 4</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Charmander</h1>
+              <div class="pkm-type">
+                <p>Fire</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Pkm05">
+              <span>ID / 5</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Charmeleon</h1>
+              <div class="pkm-type">
+                <p>Fire</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Charmander</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Pkm06">
+              <span>ID / 6</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Charizard</h1>
+              <div class="pkm-type">
+                <p>Fire</p>
+                <p>Flying</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Charmeleon</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Pkm07">
+              <span>ID / 7</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Squirtle</h1>
+              <div class="pkm-type">
+                <p>Water</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="Pkm08">
+              <span>ID / 8</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Wartortle</h1>
+              <div class="pkm-type">
+                <p>Water</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Squirtle</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Pkm09">
+              <span>ID / 9</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Blastoise</h1>
+              <div class="pkm-type">
+                <p>Water</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Wartortle</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="Pkm10">
+              <span>ID / 10</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Caterpie</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="Pkm11">
+              <span>ID / 11</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Metapod</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Caterpie</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Pkm12">
+              <span>ID / 12</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Butterfree</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+                <p>Flying</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Metapod</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="Pkm13">
+              <span>ID / 13</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Weedle</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+                <p>Poison</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Pkm14">
+              <span>ID / 14</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Kakuna</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+                <p>Poison</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Weedle</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="Pkm15">
+              <span>ID / 15</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Beedrill</h1>
+              <div class="pkm-type">
+                <p>Bug</p>
+                <p>Poison</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Kakuna</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pkm16">
+              <span>ID / 16</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Pidgey</h1>
+              <div class="pkm-type">
+                <p>Normal</p>
+                <p>Flying</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="Pkm17">
+              <span>ID / 17</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Pidgeotto</h1>
+              <div class="pkm-type">
+                <p>Normal</p>
+                <p>Flying</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Pidgey</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="Pkm18">
+              <span>ID / 18</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Pidgeot</h1>
+              <div class="pkm-type">
+                <p>Normal</p>
+                <p>Flying</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Pidgeotto</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="Pkm19">
+              <span>ID / 19</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Rattata</h1>
+              <div class="pkm-type">
+                <p>Normal</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="Pkm20">
+              <span>ID / 20</span>
+            </div>
+            <div class="card-info">
+              <h1 class="pkm-name">Raticate</h1>
+              <div class="pkm-type">
+                <p>Normal</p>
+              </div>
+              <div class="pkm-evo">
+                <p>Evolucionada de :</p>
+                <p>Rattata</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
