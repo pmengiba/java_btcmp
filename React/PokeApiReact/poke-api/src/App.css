@@ -1,0 +1,275 @@
+:root {
+  --pkm-yellow: rgb(238, 214, 0);
+  --black: #000000;
+  --red: #ff0000;
+  --white: #f5f5f5;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --grey: #333;
+  --brown: #91541bb5;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: var(--pkm-yellow);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.circle {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: var(--red);
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.circle.bottom-left {
+  bottom: -50px;
+  left: -50px;
+}
+
+.circle.bottom-right {
+  bottom: -50px;
+  right: -50px;
+}
+
+.row {
+  width: 65%;
+  margin: 20px auto;
+  display: block;
+}
+
+.search-bar {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  color: grey;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: 30%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px;
+  transition: transform 0.3 ease;
+}
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card-img {
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 160px;
+}
+
+.card-img img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.card-img span {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font-size: 12px;
+  color: var(--brown);
+  font-weight: bold;
+  background-color: rgba(234, 113, 7, 0.05);
+  padding: 2px 5px;
+}
+
+.card-info {
+  padding: 15px 15px 0 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pkm-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: var(--grey);
+}
+
+.pkm-type {
+  display: flex;
+  justify-content: left;
+  gap: 12px;
+  margin-top: 8px;
+  align-self: flex-start;
+}
+
+.pkm-type p {
+  color: var(--brown);
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--brown);
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.pkm-evo {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid var(--brown);
+  padding-left: 5px;
+  margin: 15px 0 0 0;
+}
+
+.pkm-evo p:first-child {
+  font-size: 14px;
+  color: var(--brown);
+  margin: 0;
+}
+
+.pkm-evo p:last-child {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--grey);
+  margin: 0;
+}
+
+.triangle {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 1000;
+}
+
+.triangle.top-left {
+  top: 0;
+  left: 0;
+  border-width: 50px 50px 0 0;
+  border-color: var(--black) transparent transparent transparent;
+}
+
+.triangle.top-right {
+  top: 0;
+  right: 0;
+  border-width: 0 50px 50px 0;
+  border-color: transparent var(--black) transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .row {
+    width: 90%;
+  }
+
+  .card {
+    width: 45%;
+    height: auto;
+  }
+
+  .card-info {
+    padding: 10px;
+  }
+
+  .card-img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .triangle.top-left {
+    border-width: 40px 40px 0 0;
+  }
+
+  .triangle.top-right {
+    border-width: 0 40px 40px 0;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle.bottom-left {
+    bottom: -40px;
+    left: -40px;
+  }
+
+  .circle.bottom-right {
+    bottom: -40px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    width: 95%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .triangle.top-left {
+    border-width: 30px 30px 0 0;
+  }
+
+  .triangle.top-right {
+    border-width: 0 30px 30px 0;
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle.bottom-left {
+    bottom: -30px;
+    left: -30px;
+  }
+
+  .circle.bottom-right {
+    bottom: -30px;
+    right: -30px;
+  }
+}
