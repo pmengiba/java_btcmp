@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .magic-div {
+        width: 450px;
+        height: 450px;
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="magic-div" onclick="changecolor()"></div>
+<script>
+    const magicDiv = document.querySelector(".magic-div"); 
+    const randomColor = ["blue", "green", "yellow", "red"];
+
+    function changecolor() {
+        const randomIndex = Math.floor(Math.random() * randomColor.length);
+        magicDiv.style.backgroundColor = randomColor[randomIndex];
+    }
+</script>
+</body>
+</html>
